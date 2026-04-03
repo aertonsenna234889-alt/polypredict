@@ -1,0 +1,13 @@
+{
+  "name": "polypredict",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "bot": "npm run dev -w packages/bot",
+    "server": "npm run dev -w packages/server",
+    "mini-app": "npm run dev -w packages/mini-app",
+    "build": "npm run build -w packages/shared && npm run build -w packages/server && npm run build -w packages/bot && npm run build -w packages/mini-app"
+  }
+}
